@@ -25,6 +25,10 @@ void display()  {
 void keyboard(unsigned char key, int x, int y) {
     scene->keyboard(key, x, y); 
 }
+void keyboard_up(unsigned char key, int x, int y) {
+    scene->keyboard_up(key, x, y); 
+}
+
 void mouse(int button, int state, int x, int y) {
     scene->mouse(button, state, x, y); 
 }
@@ -40,7 +44,7 @@ void idle() {
 // NOTE(clark): This code isn't great. There's finite state machines everywhere, virtual calls, and 
 //              whatever I thought of to try out some new design patterns. I had a blast making it!
 int main(int argc, char *argv[]) {
-    glm::i32vec2 raster_size(800, 600);
+    glm::i32vec2 raster_size(1600, 900);
     glm::vec2 canvas_size(10.0f, 10.0f);
 
 
@@ -52,9 +56,11 @@ int main(int argc, char *argv[]) {
     glutCreateWindow("Dope-Camera Stuff My Dude");
 
     // Callbacks
+    // glutSetCursor(GLUT_CURSOR_NONE);
     glutReshapeFunc(reshape);
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
+    glutKeyboardUpFunc(keyboard_up);
     glutMouseFunc(mouse);
     glutMotionFunc(motion);
     glutPassiveMotionFunc(motion);

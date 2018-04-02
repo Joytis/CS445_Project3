@@ -27,14 +27,12 @@ private:
 	// Should be an enumerated type
 	T _entry_state;
 
-	T _target_state;
 	T _current_state;
 	T _previous_state;	
 
 
 public:
 	
-	T get_target_state() { return _target_state; }
 	T get_current_state() { return _current_state; }
 	T get_previous_state() { return _previous_state; }
 

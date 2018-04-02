@@ -1,12 +1,39 @@
 #include <ctime> // Very simple delta time calculation. 
+#include <iostream>
+
+#include <glm/gtx/rotate_vector.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 
 #include "glutscene.hpp"
 #include "basic_shapes.hpp"
 
 glutscene::glutscene(glm::vec2 c, glm::i32vec2 r) :
 	_raster_size(r), _canvas_size(c),
-    _curr_ticks(clock()), _current_rotation(0.0f)
-{}
+    _curr_ticks(clock()), _current_rotation(0.0f),
+    _eye(0.0f, 0.0f, 10.0f), _look_at(0.0f),
+    _fsm(states::first_person)
+{
+    // Swap modes to revolve
+    _fsm.add_transition(states::first_person, states::revolve, triggers::space_bar_down);
+    _fsm.add_transition(states::first_person, states::revolve, triggers::c_down);
+
+    _fsm.add_transition(states::first_person, states::first_person_look, triggers::revolve_down);
+    _fsm.add_transition(states::first_person_look, states::first_person, triggers::revolve_up);
+
+    // Swap modes to first person
+    _fsm.add_transition(states::revolve, states::first_person, triggers::space_bar_down);
+    _fsm.add_transition(states::revolve, states::first_person, triggers::c_down);
+
+    // Different dolley states. 
+    _fsm.add_transition(states::revolve, states::revolve_dolley, triggers::dolley_down);
+    _fsm.add_transition(states::revolve_dolley, states::revolve, triggers::dolley_up);
+    _fsm.add_transition(states::revolve, states::revolve_revolve, triggers::revolve_down);
+    _fsm.add_transition(states::revolve_revolve, states::revolve, triggers::revolve_up);
+    _fsm.add_transition(states::revolve, states::revolve_pan, triggers::pan_down);
+    _fsm.add_transition(states::revolve_pan, states::revolve, triggers::pan_up);
+
+    memset(key_states, 0, sizeof(key_states));
+
+}
 
 void glutscene::calc_delta_time() {
 	_curr_ticks = clock();
@@ -22,7 +49,6 @@ void glutscene::reshape(int w, int h) {
     glLoadIdentity();
     // FOW, aspect ration, near clipping plane, far clipping plane. 
     gluPerspective(45, _raster_size.x/ _raster_size.y, 0.1, 100);
-
     glViewport(0, 0, w, h);
 }
 
@@ -87,12 +113,8 @@ void glutscene::draw_gui() {
     draw_axes(1.0f); // draw axes
     glPopMatrix(); // Pop MV matrix
 
-
     glMatrixMode(GL_PROJECTION); 
     glPopMatrix(); // Pop proj matrix
-
-
-    // GUI stuff.     
 }
 
 void glutscene::display() {
@@ -102,7 +124,9 @@ void glutscene::display() {
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt( 0, 0, 10, 0, 0, 0, 0, 1, 0);
+    gluLookAt( _eye.x, _eye.y, _eye.z, // eye
+               _look_at.x, _look_at.y, _look_at.z,  //look at
+               0, 1, 0); // up
     glRotatef(_current_rotation.x, 1, 0, 0);
     glRotatef(_current_rotation.y, 0, 1, 0);
         
@@ -139,18 +163,63 @@ void glutscene::display() {
 }
 
 void glutscene::keyboard(unsigned char key, int x, int y) {
+    key_states[key] = true;
 
+    switch(key) {
+        case 'c': {
+            _fsm.set_trigger(triggers::c_down);
+        } break;
+
+        case 32: { // space
+            _fsm.set_trigger(triggers::space_bar_down);
+        } break;
+        
+        case 27: {
+            exit(1); 
+        } break;
+    }
+}
+
+void glutscene::keyboard_up(unsigned char key, int x, int y) {
+    key_states[key] = false;
 }
 
 void glutscene::mouse(int button, int state, int x, int y) {
+
+    bool should_reposition_mouse = false;
     if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-        // _mouse_pos.x = (float)x / _raster_size.x * _canvas_size.x;
-        // _mouse_pos.y = (float)(_raster_size.y - y) / _raster_size.y * _canvas_size.y;
+        should_reposition_mouse = true;
+        _fsm.set_trigger(triggers::revolve_down);
     }
 
     if(button == GLUT_LEFT_BUTTON && state == GLUT_UP) {
-        // _mouse_pos.x = (float)x / _raster_size.x * _canvas_size.x;
-        // _mouse_pos.y = (float)(_raster_size.y - y) / _raster_size.y * _canvas_size.y;
+        should_reposition_mouse = true;
+        _fsm.set_trigger(triggers::revolve_up);
+    }
+
+    if(button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
+        should_reposition_mouse = true;
+        _fsm.set_trigger(triggers::pan_down);
+    }
+
+    if(button == GLUT_RIGHT_BUTTON && state == GLUT_UP) {
+        should_reposition_mouse = true;
+        _fsm.set_trigger(triggers::pan_up);
+    }
+
+    if(button == GLUT_MIDDLE_BUTTON && state == GLUT_DOWN) {
+        should_reposition_mouse = true;
+        _fsm.set_trigger(triggers::dolley_down);
+    }
+
+    if(button == GLUT_MIDDLE_BUTTON && state == GLUT_UP) {
+        should_reposition_mouse = true;
+        _fsm.set_trigger(triggers::dolley_up);
+    }
+
+    if(should_reposition_mouse) {
+        _mouse_pos.x = (float)x / _raster_size.x * _canvas_size.x;
+        _mouse_pos.y = (float)(_raster_size.y - y) / _raster_size.y * _canvas_size.y;        
     }
 
 }
@@ -160,8 +229,15 @@ void glutscene::motion(int x, int y) {
 	// mouse events are handled by OS, eventually. When using mouse in the raster window,
 	//  it assumes top-left is the origin.
     // Note: the raster window created by GLUT assumes bottom-left is the origin.
-	// _mouse_pos.x = (float)x / _raster_size.x * _canvas_size.x;
-    // _mouse_pos.y = (float)(_raster_size.y - y) / _raster_size.y * _canvas_size.y;
+	float newpos_x = (float)x / _raster_size.x * _canvas_size.x;
+    float newpos_y = (float)(_raster_size.y - y) / _raster_size.y * _canvas_size.y;
+
+    _mouse_offset.x = newpos_x -_mouse_pos.x;
+    _mouse_offset.y = newpos_y -_mouse_pos.y;
+
+    _mouse_pos.x = newpos_x;
+    _mouse_pos.y = newpos_y;
+
 
     glutPostRedisplay();
 }
@@ -170,11 +246,76 @@ void glutscene::menu(int value) {
     
 }
 
+void glutscene::do_motion(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v) {
+    // Check for key input. 
+    if(key_states['w']) {
+        _eye += -1.0f * n * 2.0f * _delta_time;
+        _look_at += -1.0f * n * 2.0f * _delta_time;
+    }
+    if(key_states['a']) {
+        _eye += -1.0f * u * 2.0f * _delta_time;
+        _look_at += -1.0f * u * 2.0f * _delta_time;
+    }
+    if(key_states['s']) {
+        _eye += n * 2.0f * _delta_time;
+        _look_at += n * 2.0f * _delta_time;
+    }
+    if(key_states['d']) {
+        _eye += u * 2.0f * _delta_time;
+        _look_at += u * 2.0f * _delta_time;
+    }
+}
+
 void glutscene::idle() {
-	calc_delta_time();
+    calc_delta_time();
 
-	// calculate how much to rotate
-	_current_rotation.y += 20.0f * _delta_time;
+    _fsm.update();
 
-	glutPostRedisplay();
+    auto n = glm::normalize(_eye - _look_at);
+    auto u = glm::normalize(glm::cross(glm::vec3(0, 1, 0), n));
+    auto v = glm::normalize(glm::cross(n, u));
+
+    switch(_fsm.get_current_state()) {
+        case states::first_person: {
+            do_motion(n, u, v);
+        } break;
+
+        case states::first_person_look: {
+            do_motion(n, u, v);
+
+            // move it to origin
+            _look_at -= _eye;
+            // rotate it
+            _look_at = glm::rotate(_look_at,
+                                   -1.0f * glm::radians(_mouse_offset.x) * 10.0f,
+                                   v);
+            _look_at = glm::rotate(_look_at,
+                                   glm::radians(_mouse_offset.y) * 10.0f,
+                                   u);
+            // move it back
+            _look_at += _eye;    
+
+        } break;
+        case states::revolve: {
+
+        } break;
+
+        case states::revolve_dolley: {
+
+        } break;
+
+        case states::revolve_revolve: {
+
+        } break;
+
+        case states::revolve_pan: {
+
+        } break;
+
+    }
+
+    // glutWarpPointer( _raster_size.x / 2 , _raster_size.y / 2 );
+    _mouse_offset = glm::vec2(0.0f); // Zero out the mouse offset. We should only use it once. 
+
+    glutPostRedisplay();
 }
