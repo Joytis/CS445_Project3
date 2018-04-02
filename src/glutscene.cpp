@@ -219,22 +219,22 @@ void glutscene::mouse(int button, int state, int x, int y) {
 
     if(button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
         should_reposition_mouse = true;
-        _fsm.set_trigger(triggers::pan_down);
+        _fsm.set_trigger(triggers::dolley_down);
     }
 
     if(button == GLUT_RIGHT_BUTTON && state == GLUT_UP) {
         should_reposition_mouse = true;
-        _fsm.set_trigger(triggers::pan_up);
+        _fsm.set_trigger(triggers::dolley_up);
     }
 
     if(button == GLUT_MIDDLE_BUTTON && state == GLUT_DOWN) {
         should_reposition_mouse = true;
-        _fsm.set_trigger(triggers::dolley_down);
+        _fsm.set_trigger(triggers::pan_down);
     }
 
     if(button == GLUT_MIDDLE_BUTTON && state == GLUT_UP) {
         should_reposition_mouse = true;
-        _fsm.set_trigger(triggers::dolley_up);
+        _fsm.set_trigger(triggers::pan_up);
     }
 
     if(should_reposition_mouse) {
@@ -268,7 +268,7 @@ void glutscene::menu(int value) {
 
 void glutscene::do_motion(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v) {
     // Check for key input. 
-    static const float move_speed = 3.0f;
+    static const float move_speed = 5.0f;
     if(key_states['w']) {
         _eye += -1.0f * n * move_speed * _delta_time;
         _look_at += -1.0f * n * move_speed * _delta_time;
@@ -285,6 +285,14 @@ void glutscene::do_motion(const glm::vec3& n, const glm::vec3& u, const glm::vec
         _eye += u * move_speed * _delta_time;
         _look_at += u * move_speed * _delta_time;
     }
+}
+
+void glutscene::do_motion_mouse(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v) {
+    static const float move_speed = 1.0f;
+    _eye += v * move_speed * _mouse_offset.y;
+    _eye += u * move_speed * _mouse_offset.x;
+    _look_at += v * move_speed * _mouse_offset.y;
+    _look_at += u * move_speed * _mouse_offset.x;
 }
 
 void glutscene::idle() {
@@ -328,15 +336,24 @@ void glutscene::idle() {
         } break;
 
         case states::revolve_dolley: {
-
         } break;
 
         case states::revolve_revolve: {
-
+            // move it to origin
+            _eye -= _look_at;
+            // rotate it
+            _eye = glm::rotate(_eye,
+                               -1.0f * glm::radians(_mouse_offset.x) * look_speed,
+                               glm::vec3(0, 1, 0));
+            _eye = glm::rotate(_eye,
+                               glm::radians(_mouse_offset.y) * look_speed,
+                               u);
+            // move it back
+            _eye += _look_at;  
         } break;
 
         case states::revolve_pan: {
-
+            do_motion_mouse(n, u, v);
         } break;
 
     }

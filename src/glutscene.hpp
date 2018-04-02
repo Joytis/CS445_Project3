@@ -60,6 +60,7 @@ private:
 	void draw_gui();
 	static void draw_axes(float scale);
 	void do_motion(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v);
+	void do_motion_mouse(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v);
 
 	
 public:
