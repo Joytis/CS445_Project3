@@ -1,0 +1,1828 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mo",
+				"model"
+			],
+			[
+				"glP",
+				"glPopMatrix"
+			],
+			[
+				"apply",
+				"apply_basic_translations"
+			],
+			[
+				"get",
+				"get_current_state"
+			],
+			[
+				"mouse",
+				"mouse_distance"
+			],
+			[
+				"_pre",
+				"_previous_pos"
+			],
+			[
+				"_p",
+				"_points\t(polygon_drawer.cpp)"
+			],
+			[
+				"vectr",
+				"vector3"
+			],
+			[
+				"lmou",
+				"lmouse_down\t(robot_part.hpp)"
+			],
+			[
+				"par",
+				"par_x"
+			],
+			[
+				"lmouse",
+				"lmouse_over"
+			],
+			[
+				"adj",
+				"adj_y"
+			],
+			[
+				"add",
+				"add_transition\t(polygon_drawer.cpp)"
+			],
+			[
+				"fin",
+				"finite_state_system\t(polygon_drawer.hpp)"
+			],
+			[
+				"right",
+				"right_arm"
+			],
+			[
+				"left",
+				"left_thigh"
+			],
+			[
+				"robot",
+				"robot_part"
+			],
+			[
+				"draw",
+				"draw_joint\t(robot_part.cpp)"
+			],
+			[
+				"basic",
+				"basic_shapes.hpp\t(main.cpp)"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"tran",
+				"transform.hpp\t(robot_part.hpp)"
+			],
+			[
+				"shape",
+				"shape_type\t(robot_part.hpp)"
+			],
+			[
+				"rot",
+				"rotation"
+			],
+			[
+				"color",
+				"color_tint"
+			],
+			[
+				"unordered",
+				"unordered_map\tstandard header (since c++11)"
+			],
+			[
+				"col",
+				"color_tint"
+			],
+			[
+				"simple",
+				"simple_point_drawer_states"
+			],
+			[
+				"quad",
+				"quad_drawer_states"
+			],
+			[
+				"poly",
+				"polygon_drawer_states"
+			],
+			[
+				"line_draw",
+				"line_drawer_states"
+			],
+			[
+				"_current",
+				"_current_color"
+			],
+			[
+				"_curren",
+				"_current_drawer"
+			],
+			[
+				"current",
+				"_current_state"
+			],
+			[
+				"_line",
+				"_line_width\t(line_drawer.hpp)"
+			],
+			[
+				"line",
+				"line_width"
+			],
+			[
+				"one",
+				"one_point"
+			],
+			[
+				"two",
+				"two_points"
+			],
+			[
+				"polygon",
+				"polygon_drawer\t(glutscene.cpp)"
+			],
+			[
+				"_po",
+				"_polygons\t(glutscene.hpp)"
+			],
+			[
+				"trigger",
+				"trigger_data\t(circle_drawer.hpp)"
+			],
+			[
+				"circle",
+				"circle_drawer"
+			],
+			[
+				"circl",
+				"circle_drawer\t(circle_drawer.hpp)"
+			],
+			[
+				"point",
+				"point_size"
+			],
+			[
+				"_point",
+				"_point_size"
+			],
+			[
+				"GL_P",
+				"GL_POINTS\t(point_drawer.cpp)"
+			],
+			[
+				"no",
+				"no_points"
+			],
+			[
+				"line_d",
+				"line_drawer_states"
+			],
+			[
+				"update",
+				"update_cursor"
+			],
+			[
+				"_cure",
+				"_current_width"
+			],
+			[
+				"_mouse",
+				"_mouse_drawer"
+			],
+			[
+				"create",
+				"create_new_primative"
+			],
+			[
+				"new",
+				"newstate"
+			],
+			[
+				"trian",
+				"triangle\t(glutscene.hpp)"
+			],
+			[
+				"_curre",
+				"_current_state\t(glutscene.hpp)"
+			],
+			[
+				"entry",
+				"entry_state"
+			],
+			[
+				"transi",
+				"transitions"
+			],
+			[
+				"second",
+				"second\t(glutscene.cpp)"
+			],
+			[
+				"is",
+				"is_complete"
+			],
+			[
+				"lmouse_up",
+				"lmouse_up_data\t(glutscene.cpp)"
+			],
+			[
+				"triang",
+				"triangle_drawer\t(triangle_drawer.hpp)"
+			],
+			[
+				"first",
+				"first_point"
+			],
+			[
+				"firs",
+				"first_point\t(triangle_drawer.hpp)"
+			],
+			[
+				"triangl",
+				"triangle_drawer"
+			],
+			[
+				"triangle",
+				"triangle_drawer_states"
+			],
+			[
+				"gl",
+				"gl_drawer"
+			],
+			[
+				"set",
+				"send_trigger\t(gl_drawer.hpp)"
+			],
+			[
+				"point_draw",
+				"point_drawer_states"
+			],
+			[
+				"funt",
+				"funtype"
+			],
+			[
+				"finite",
+				"finite_state_system\t(finite_state_system.hpp)"
+			],
+			[
+				"raster",
+				"raster_size"
+			],
+			[
+				"can",
+				"canvas_size"
+			],
+			[
+				"glutCreate",
+				"glutCreateWindow\t(interactiveTriangle.cpp)"
+			],
+			[
+				"target",
+				"_target_state"
+			],
+			[
+				"funtype",
+				"funtype_move"
+			],
+			[
+				"unorde",
+				"unordered_map\tstandard header (since c++11)"
+			],
+			[
+				"CMAKE_CURRENT",
+				"CMAKE_CURRENT_SOURCE_DIR\tbuiltin"
+			],
+			[
+				"ApplyC",
+				"ApplyCameraShake\t(GameController.cs)"
+			],
+			[
+				"Apply",
+				"ApplyCameraShake(float amount)\tvoid"
+			],
+			[
+				"time",
+				"timeFromMaxToMin"
+			],
+			[
+				"trauma",
+				"traumaDrainRate"
+			],
+			[
+				"Camera",
+				"CameraShake"
+			],
+			[
+				"Game",
+				"GameController\t(GameController.cs)"
+			],
+			[
+				"base",
+				"baseRotation"
+			],
+			[
+				"Recal",
+				"RecalculateExitDict"
+			],
+			[
+				"far",
+				"farthestPoint"
+			],
+			[
+				"Seriali",
+				"SerializeField"
+			],
+			[
+				"vec",
+				"Vec3List"
+			],
+			[
+				"exit",
+				"exitDict"
+			],
+			[
+				"calc",
+				"calculateMetadata"
+			],
+			[
+				"farth",
+				"farthestPoint"
+			],
+			[
+				"orig",
+				"origSize"
+			],
+			[
+				"Check",
+				"CheckValidity"
+			],
+			[
+				"Vec",
+				"Vector3Int"
+			],
+			[
+				"ExitDir",
+				"ExitDirection\t(Exit.cs)"
+			],
+			[
+				"Seri",
+				"SerializeField"
+			],
+			[
+				"cWidth",
+				"cWidth"
+			],
+			[
+				"CHUNK",
+				"CHUNK_SIZE"
+			],
+			[
+				"cWidt",
+				"cWidthProp"
+			],
+			[
+				"all",
+				"allOriginsAboveZero"
+			],
+			[
+				"min",
+				"minOrigin"
+			],
+			[
+				"print",
+				"printStrings"
+			],
+			[
+				"key",
+				"keyString"
+			],
+			[
+				"front",
+				"frontString"
+			],
+			[
+				"Build",
+				"BuildMainGrid"
+			],
+			[
+				"outpu",
+				"imgOutputCount"
+			],
+			[
+				"ILog",
+				"ILogHandler"
+			],
+			[
+				"expected",
+				"expectedHeight"
+			],
+			[
+				"offset",
+				"offsety"
+			],
+			[
+				"origH",
+				"origWidth"
+			],
+			[
+				"oriG",
+				"origWidth"
+			],
+			[
+				"Exit",
+				"ExitDir"
+			],
+			[
+				"truepo",
+				"truePosX"
+			],
+			[
+				"exits",
+				"exitsList"
+			],
+			[
+				"legl",
+				"legalChunks"
+			],
+			[
+				"ExitD",
+				"ExitDirToop"
+			],
+			[
+				"chunkedAd",
+				"chunkedAdjNodes"
+			],
+			[
+				"calculate",
+				"CalculateDistance"
+			],
+			[
+				"otherEx",
+				"otherExit"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"Calc",
+				"CalcNewPos"
+			],
+			[
+				"loop",
+				"loopTied"
+			],
+			[
+				"pos",
+				"posTup"
+			],
+			[
+				"chunk",
+				"chunk_exit\t(dungeon_generator.py)"
+			],
+			[
+				"true",
+				"trueLegalChunks"
+			],
+			[
+				"adjExi",
+				"adjExits"
+			],
+			[
+				"chosen",
+				"chosenChunk"
+			],
+			[
+				"chunked",
+				"chunkedAdjs"
+			],
+			[
+				"chunke",
+				"chunkedAdjs"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main.cpp",
+			"settings":
+			{
+				"buffer_size": 3524,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 598,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "project3 (Windows)",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"project3 (Windows)",
+					""
+				],
+				[
+					"project3 (Windows)",
+					"rebuild_cache"
+				],
+				[
+					"project3 (Windows)",
+					"src/rebuild_cache"
+				],
+				[
+					"project3 (Windows)",
+					"project2.exe"
+				],
+				[
+					"project3 (Windows)",
+					"src/all"
+				],
+				[
+					"project3 (Windows)",
+					"all"
+				],
+				[
+					"project3 (Windows)",
+					"clean"
+				]
+			],
+			[
+				"project3 (Windows)",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Config",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"Confi",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"Clear",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"Write",
+				"CMakeBuilder: Write Build Targets to Sublime Project File"
+			],
+			[
+				"Cmake",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"clear",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"custom",
+				"Git: Custom Command"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"git command",
+				"Git: Quick Commit (repo, only already added files)"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"te",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"cmake",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"con",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"write",
+				"CMakeBuilder: Write Build Targets to Sublime Project File"
+			],
+			[
+				"Cofn",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"CMake",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"COnfig",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"C",
+				"Set Syntax: C++"
+			],
+			[
+				"Configu",
+				"Set Syntax: Configure"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git rese",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"Json",
+				"Set Syntax: JSON"
+			],
+			[
+				"Con",
+				"Set Syntax: Configure"
+			],
+			[
+				"Conf",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"CMakeBUi",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"CMakeBuilder",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"CmakeBui",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"CmakeBu",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"CmakeBuilder",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"tex",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git:",
+				"Git: Graph Current File"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git",
+				"Git: Diff Tool All"
+			],
+			[
+				"git push",
+				"Git: Push Tags"
+			],
+			[
+				"git an",
+				"Git: Amend Commit"
+			],
+			[
+				"git anno",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git pull ",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git fetch",
+				"Git: Fetch"
+			],
+			[
+				"git track",
+				"Git: Track Remote Branch"
+			],
+			[
+				"git remote",
+				"Git: Track Remote Branch"
+			],
+			[
+				"git init",
+				"Git: Init"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"nre",
+				"File: New File Relative to Current View"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"CmakeBuilder: ",
+				"CMakeBuilder: Write Build Targets to Sublime Project File"
+			],
+			[
+				"config",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"SublimeLinter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"text",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"txt",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"CmakeClear",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"CmakeConfi",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"proj",
+				"Project: Close"
+			],
+			[
+				"JSON",
+				"Set Syntax: JSON"
+			],
+			[
+				"Claer",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"CmakeClea",
+				"CMakeBuilder: Clear Cache"
+			],
+			[
+				"Confg",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"CmakeBuilderConfig",
+				"CMakeBuilder: Configure"
+			],
+			[
+				"Write Build",
+				"CMakeBuilder: Write Build Targets to Sublime Project File"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Disco",
+				"Discord Rich Presence: Disconnect"
+			],
+			[
+				"Discord",
+				"Discord Rich Presence: Connect to Discord"
+			],
+			[
+				"Omni",
+				"OmniSharpSublime: Build"
+			],
+			[
+				"C#",
+				"Set Syntax: C#"
+			],
+			[
+				"newnew",
+				"File: New File Relative to Current View"
+			],
+			[
+				"rust",
+				"Set Syntax: Rust"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"text pastry from",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"deleete",
+				"Plugin Development: Profile Events"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"ini",
+				"Set Syntax: INI"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 553.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3"
+	],
+	"file_history":
+	[
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/project3.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/src/main.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/src/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/.gitignore",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/src/robot_part.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/src/fsm/finite_state_system.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/polygon_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/src/robot_part.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/src/glutscene.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/src/glutscene.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/project2.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project3/release/README.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/glutscene.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/transform.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/transform.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot_part.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/polygon_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot_part.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/fsm/finite_state_system.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/color.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/color_tint.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/main.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/triggers.hpp",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/glutscene.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/color_tint.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/.gitignore",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/project2.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/vector3.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/fsm/enum_class_bitmasks.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/include/GL/freeglut_ext.h",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/robot_part.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/transform.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/color_tint.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/color_tint.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/robot_part.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/joint.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/glutscene.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/rectangle.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/basic_shapes.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/drawers/simple_point_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/rectangle.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/drawers/quad_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/circle.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/i_shape_renderer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/drawers/quad_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/vector3.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/point.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/polygon.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/ishape.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/drawers/gl_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/project1.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/drawers/line_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/drawers/drawers.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/main.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/README.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/cool.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/CombatLibrary/CombatStats.cs",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/drawers.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/point_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/line_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/quad_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/simple_point_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/triangle_drawer.cpp",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/fsm/finite_state_system.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/glutscene.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/point_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/quad_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/triangle_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/color.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/line_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/simple_point_drawer.hpp",
+		"/C/Users/Clark/AppData/Local/Temp/Temp1_freeglut-MSVC-3.0.0-2.mp.zip/freeglut/Readme.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/.gitignore",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/circle_drawer.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/circle_drawer.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawables/triangle.hpp",
+		"/C/Users/Clark/Downloads/interactiveTriangle.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawers/gl_drawer.hpp",
+		"/C/Users/Clark/AppData/Local/Temp/idleExample.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/fsm/fsm.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/fsm/state.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/fsm/state.cpp",
+		"/C/Users/Clark/AppData/Local/Temp/interactiveTriangle.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/fsm/enum_class_bitmasks.hpp",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/LWG/StateMachines/TimerState.cs",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/LWG/StateMachines/State.cs",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/bind/bind.hpp",
+		"/D/Programming/src/boost_1_64_0/libs/bind/bind_as_compose.cpp",
+		"/D/Programming/src/boost_1_64_0/libs/bind/bind_visitor.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawable.hpp",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/LWG/StateMachines/FiniteStateMachine.cs",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/finite_state_machine/finite_state_system.h",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/finite_state_machine",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/test_fsm.h",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/state.cpp",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/LWG/StateMachines/IState.cs",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/drawable.h",
+		"/C/Users/Clark/AppData/Local/Temp/firstProgram.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project1/configproj.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS545/configproj/configproj.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS545/configproj/src/main.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS307/configproj/src/testclass.h",
+		"/C/Users/Clark/Documents/Programming/School/CS307/configproj/src/main.cpp",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/Clark/Documents/Programming/School/CS307/configproj/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS307/configproj/configproj.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS307/configproj/src/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/Controller2D.cs",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/Player/PlayerController.cs",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/PrebuiltOmniSharpServer/config.json",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Editor/EditorHelper.cs",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/mini_clungeons.sublime-project",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/ProcGen/ProcGenTest.cs",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/Player/PlayerMovement.cs",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Editor/Windows/CompileTimeWindow.cs",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Editor/Editors/AttackLibrary_Editor.cs",
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/Player/PlayerHealth.cs"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"project2",
+			" ${",
+			"project2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								716,
+								716
+							]
+						],
+						"settings":
+						{
+							"SL.22.region_keys":
+							[
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"SL.29.region_keys":
+							[
+							],
+							"syntax": "Packages/CMake/CMake.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 358.0
+	},
+	"output.files_to_be_deleted":
+	{
+		"height": 109.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "project3 (Windows)",
+	"project": "project3.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Cmake",
+				"src\\CMakeLists.txt"
+			],
+			[
+				"main",
+				"src\\main.cpp"
+			],
+			[
+				"proj",
+				"project3.sublime-project"
+			],
+			[
+				"CMake",
+				"CMakeLists.txt"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"robot",
+				"src\\robot_part.cpp"
+			],
+			[
+				"finite",
+				"src\\fsm\\finite_state_system.hpp"
+			],
+			[
+				"pro",
+				"project2.sublime-project"
+			],
+			[
+				"rbot",
+				"src\\robot_part.cpp"
+			],
+			[
+				"glut",
+				"src\\glutscene.cpp"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"trans",
+				"src\\transform.cpp"
+			],
+			[
+				"r",
+				"src\\robot_part.cpp"
+			],
+			[
+				"fsm",
+				"src\\fsm\\finite_state_system.hpp"
+			],
+			[
+				"color",
+				"src\\color.hpp"
+			],
+			[
+				"tran",
+				"src\\transform.cpp"
+			],
+			[
+				"basic",
+				"src\\basic_shapes.cpp"
+			],
+			[
+				"glue",
+				"src\\glutscene.cpp"
+			],
+			[
+				"tra",
+				"src\\transform.hpp"
+			],
+			[
+				"robo",
+				"src\\robot_part.cpp"
+			],
+			[
+				"transform",
+				"src\\transform.cpp"
+			],
+			[
+				"part",
+				"src\\robot_part.cpp"
+			],
+			[
+				"glutsc",
+				"src\\glutscene.cpp"
+			],
+			[
+				"transf",
+				"src\\transform.hpp"
+			],
+			[
+				"vector",
+				"src\\vector3.hpp"
+			],
+			[
+				"vec",
+				"src\\vector3.hpp"
+			],
+			[
+				"rb",
+				"src\\robot\\robot_part.hpp"
+			],
+			[
+				"",
+				"src\\glutscene.hpp"
+			],
+			[
+				"robotPart",
+				"src\\robot\\robot_part.cpp"
+			],
+			[
+				"project",
+				"project2.sublime-project"
+			],
+			[
+				"roboit",
+				"src\\robot\\color_tint.cpp"
+			],
+			[
+				"colo",
+				"src\\robot\\color_tint.hpp"
+			],
+			[
+				"joint",
+				"src\\robot\\joint.hpp"
+			],
+			[
+				"colot",
+				"src\\robot\\color_tint.cpp"
+			],
+			[
+				"col",
+				"src\\robot\\color_tint.hpp"
+			],
+			[
+				"quad",
+				"src\\drawers\\quad_drawer.cpp"
+			],
+			[
+				"rectangle",
+				"src\\basic_shapes\\rectangle.hpp"
+			],
+			[
+				"rectangl",
+				"src\\basic_shapes\\rectangle.cpp"
+			],
+			[
+				"circle",
+				"src\\basic_shapes\\circle.hpp"
+			],
+			[
+				"vector3",
+				"src\\basic_shapes\\vector3.hpp"
+			],
+			[
+				"rec",
+				"src\\basic_shapes\\rectangle.hpp"
+			],
+			[
+				"rectang",
+				"src\\basic_shapes\\rectangle.cpp"
+			],
+			[
+				"cir",
+				"src\\basic_shapes\\circle.hpp"
+			],
+			[
+				"i",
+				"src\\basic_shapes\\i_shape_renderer.hpp"
+			],
+			[
+				"ishape",
+				"src\\basic_shapes\\i_shape_renderer.hpp"
+			],
+			[
+				"ish",
+				"src\\basic_shapes\\i_shape_renderer.hpp"
+			],
+			[
+				"gl_dr",
+				"src\\drawers\\gl_drawer.hpp"
+			],
+			[
+				"drawers",
+				"src\\drawers\\drawers.hpp"
+			],
+			[
+				"readme",
+				"README.txt"
+			],
+			[
+				"drawer",
+				"src\\drawers\\drawers.hpp"
+			],
+			[
+				"triangle",
+				"src\\drawers\\triangle_drawer.cpp"
+			],
+			[
+				"simple",
+				"src\\drawers\\simple_point_drawer.cpp"
+			],
+			[
+				"polygon",
+				"src\\drawers\\polygon_drawer.cpp"
+			],
+			[
+				"point",
+				"src\\drawers\\point_drawer.cpp"
+			],
+			[
+				"line",
+				"src\\drawers\\line_drawer.cpp"
+			],
+			[
+				"coolr",
+				"src\\color.hpp"
+			],
+			[
+				"pr",
+				"project1.sublime-project"
+			],
+			[
+				"triang",
+				"src\\drawers\\triangle_drawer.cpp"
+			],
+			[
+				"poly",
+				"src\\drawers\\polygon_drawer.cpp"
+			],
+			[
+				"trigger",
+				"src\\drawers\\triggers.hpp"
+			],
+			[
+				"Simple",
+				"src\\drawers\\simple_point_drawer.cpp"
+			],
+			[
+				"linr",
+				"src\\drawers\\line_drawer.cpp"
+			],
+			[
+				"sublime",
+				"project1.sublime-project"
+			],
+			[
+				"GL",
+				"src\\glutscene.cpp"
+			],
+			[
+				"trig",
+				"src\\drawers\\triggers.hpp"
+			],
+			[
+				"tria",
+				"src\\drawers\\triangle_drawer.cpp"
+			],
+			[
+				"ci",
+				"src\\drawers\\circle_drawer.hpp"
+			],
+			[
+				"trian",
+				"src\\drawers\\triangle_drawer.cpp"
+			],
+			[
+				"circl",
+				"src\\drawers\\circle_drawer.hpp"
+			],
+			[
+				"tri",
+				"src\\drawers\\triangle_drawer.hpp"
+			],
+			[
+				"cmake",
+				"CMakeLists.txt"
+			],
+			[
+				"draw",
+				"src\\drawers\\quad_drawer.cpp"
+			],
+			[
+				"trigg",
+				"src\\drawers\\triggers.hpp"
+			],
+			[
+				"inter",
+				"C:\\Users\\Clark\\Downloads\\interactiveTriangle.cpp"
+			],
+			[
+				"gl",
+				"src\\drawers\\gl_drawer.hpp"
+			],
+			[
+				"qu",
+				"src\\drawers\\quad_drawer.hpp"
+			],
+			[
+				"triangl",
+				"src\\drawers\\triangle_drawer.cpp"
+			],
+			[
+				"trigna",
+				"src\\drawers\\triangle_drawer.hpp"
+			],
+			[
+				"glsc",
+				"src\\glutscene.cpp"
+			],
+			[
+				"fini",
+				"src\\fsm\\finite_state_system.hpp"
+			],
+			[
+				"glD",
+				"src\\drawers\\gl_drawer.hpp"
+			],
+			[
+				"trin",
+				"src\\drawers\\triangle_drawer.hpp"
+			],
+			[
+				"state",
+				"src\\fsm\\state.hpp"
+			],
+			[
+				"glDraw",
+				"src\\drawers\\gl_drawer.hpp"
+			],
+			[
+				"triggers",
+				"src\\drawers\\triggers.hpp"
+			],
+			[
+				"int",
+				"C:\\Users\\Clark\\AppData\\Local\\Temp\\interactiveTriangle.cpp"
+			],
+			[
+				"poi",
+				"src\\drawers\\point_drawer.cpp"
+			],
+			[
+				"man",
+				"src\\main.cpp"
+			],
+			[
+				"min",
+				"src\\main.cpp"
+			],
+			[
+				"fs",
+				"src\\fsm\\fsm.hpp"
+			],
+			[
+				"enum",
+				"src\\fsm\\enum_class_bitmasks.hpp"
+			],
+			[
+				"Cmak",
+				"src\\CMakeLists.txt"
+			],
+			[
+				"tian",
+				"src\\drawables\\triangle.hpp"
+			],
+			[
+				"sttate",
+				"src\\fsm\\finite_state_system.hpp"
+			],
+			[
+				"sat",
+				"src\\fsm\\state.h"
+			],
+			[
+				"Finite",
+				"C:\\Users\\Clark\\Documents\\Programming\\Projects\\main_game\\Assets\\Scripts\\LWG\\StateMachines\\FiniteStateMachine.cs"
+			],
+			[
+				"test",
+				"src\\test_fsm.h"
+			],
+			[
+				"mian",
+				"src\\main.cpp"
+			],
+			[
+				"FiniteS",
+				"C:\\Users\\Clark\\Documents\\Programming\\Projects\\main_game\\Assets\\Scripts\\LWG\\StateMachines\\FiniteStateMachine.cs"
+			],
+			[
+				"state.cpp",
+				"src\\state.cpp"
+			],
+			[
+				"p",
+				"configproj.sublime-project"
+			],
+			[
+				"config",
+				"configproj.sublime-project"
+			],
+			[
+				"Proj",
+				"configproj.sublime-project"
+			],
+			[
+				"AttackLib",
+				"Assets\\Editor\\Windows\\AttackLibraryWindow.cs"
+			],
+			[
+				"Input",
+				"Assets\\Scripts\\Game\\Player\\InputForgiver.cs"
+			],
+			[
+				"Player",
+				"Assets\\Scripts\\Game\\Player\\PlayerController.cs"
+			],
+			[
+				"Controller",
+				"Assets\\Scripts\\Game\\Controller2D.cs"
+			],
+			[
+				"PlayerCon",
+				"Assets\\Scripts\\Game\\Player\\PlayerController.cs"
+			],
+			[
+				"ProcGen",
+				"Assets\\Scripts\\Game\\ProcGen\\ProcGenTest.cs"
+			],
+			[
+				"Pro",
+				"Assets\\Scripts\\Game\\ProcGen\\ProcGenTest.cs"
+			],
+			[
+				"Combat",
+				"Assets\\Scripts\\Game\\CombatLibrary\\CombatStats.cs"
+			],
+			[
+				"Com",
+				"Assets\\Editor\\Windows\\CompileTimeWindow.cs"
+			],
+			[
+				"PLayeo",
+				"Assets\\Scripts\\Game\\Player\\PlayerController.cs"
+			],
+			[
+				"Attack",
+				"Assets\\Editor\\Editors\\AttackLibrary_Editor.cs"
+			],
+			[
+				"PlayerMove",
+				"Assets\\Scripts\\Game\\Player\\PlayerMovement.cs"
+			],
+			[
+				"PlayerHeal",
+				"Assets\\Scripts\\Game\\Player\\PlayerHealth.cs"
+			],
+			[
+				"StateStru",
+				"Assets\\Scripts\\Game\\Player\\PlayerController_StateStructs.cs"
+			],
+			[
+				"MoveState",
+				"Assets\\Scripts\\Game\\Player\\PlayerController_MoveStates.cs"
+			],
+			[
+				"AirState",
+				"Assets\\Scripts\\Game\\Player\\PlayerController_AirStates.cs"
+			],
+			[
+				"PlayerDea",
+				"Assets\\Scripts\\Game\\Player\\PlayerDeath.cs"
+			],
+			[
+				"Playero",
+				"Assets\\Scripts\\Game\\Player\\PlayerController.cs"
+			],
+			[
+				"AirStates",
+				"Assets\\Scripts\\Game\\Player\\PlayerController_AirStates.cs"
+			],
+			[
+				"AirS\t",
+				"Assets\\Scripts\\Game\\Player\\PlayerController_AirStates.cs"
+			],
+			[
+				"PlayerAirS",
+				"Assets\\Scripts\\Game\\Player\\PlayerController_AirStates.cs"
+			],
+			[
+				"Pla",
+				"Assets\\Scripts\\Game\\Player\\PlayerController.cs"
+			],
+			[
+				"projec",
+				"mini_clungeons.sublime-project"
+			],
+			[
+				"Contro",
+				"Assets\\Scripts\\Game\\Player\\PlayerController_AirStates.cs"
+			],
+			[
+				"Scrub",
+				"Assets\\Scripts\\Game\\Enemies\\Scrub\\ScrubController.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 104.0,
+		"last_filter": "rename",
+		"selected_items":
+		[
+			[
+				"rename",
+				"PlayerEnchantments"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 282.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
