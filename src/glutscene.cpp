@@ -2,14 +2,15 @@
 #include <iostream>
 
 #include <glm/gtx/rotate_vector.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
+#include <glm/gtx/vector_angle.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
+#include <glm/gtx/string_cast.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 
 #include "glutscene.hpp"
 #include "basic_shapes.hpp"
 
 glutscene::glutscene(glm::vec2 c, glm::i32vec2 r) :
 	_raster_size(r), _canvas_size(c),
-    _curr_ticks(clock()), _current_rotation(0.0f),
-    _eye(0.0f, 0.0f, 10.0f), _look_at(0.0f),
+    _curr_ticks(clock()), _eye(5.0f, 3.0f, 5.0f), _look_at(0.0f),
     _fsm(states::first_person)
 {
     // Swap modes to revolve
@@ -33,22 +34,25 @@ glutscene::glutscene(glm::vec2 c, glm::i32vec2 r) :
 
     memset(key_states, 0, sizeof(key_states));
 
+    _first_person_str = "First Person Camera";
+    _revolve_str = "Revolve Camera";
+    _state_string = _first_person_str;
 }
 
 void glutscene::calc_delta_time() {
-	_curr_ticks = clock();
-	_delta_time = ((float)(_curr_ticks - _prev_ticks)) / CLOCKS_PER_SEC;
-	_prev_ticks = _curr_ticks;
+    _curr_ticks = clock();
+    _delta_time = ((float)(_curr_ticks - _prev_ticks)) / CLOCKS_PER_SEC;
+    _prev_ticks = _curr_ticks; 
 }
 
 void glutscene::reshape(int w, int h) {
-	_raster_size.x = w;
+    _raster_size.x = w;
     _raster_size.y = h;
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    // FOW, aspect ration, near clipping plane, far clipping plane. 
-    gluPerspective(45, _raster_size.x/ _raster_size.y, 0.1, 100);
+    // FOV, aspect ration, near clipping plane, far clipping plane. 
+    gluPerspective(90, _raster_size.x / _raster_size.y, 0.1, 100);
     glViewport(0, 0, w, h);
 }
 
@@ -107,28 +111,44 @@ void glutscene::draw_gui() {
     glMatrixMode(GL_MODELVIEW); 
     glPushMatrix(); // Push a MV matrix
     glLoadIdentity();
+
+    // Draw cute axis at bottom right. 
     glTranslatef(1, 1, 0);
-    glRotatef(_current_rotation.x, 1, 0, 0);
-    glRotatef(_current_rotation.y, 0, 1, 0);
+    glPushMatrix(); // for draw_axes
+    gluLookAt( _eye.x, _eye.y, _eye.z, // eye
+               _look_at.x, _look_at.y, _look_at.z,  //look at
+               0, 1, 0); // up
+    glTranslatef(_eye.x, _eye.y, _eye.z);
     draw_axes(1.0f); // draw axes
+    glPopMatrix(); // for axes
+    glTranslatef(-0.75, 8.5, 0);
+
+    // Print text to screen
+    const char current_state_str[] = "Current Camera State: ";
+    glColor3f(0.4f, 0.4f, 0.4f);
+    glRasterPos2f(0.0f, 0.0f);
+    glutBitmapString(GLUT_BITMAP_HELVETICA_18, reinterpret_cast<const unsigned char*>(current_state_str));
+    glutBitmapString(GLUT_BITMAP_HELVETICA_18, reinterpret_cast<const unsigned char*>(_state_string));
+
     glPopMatrix(); // Pop MV matrix
 
     glMatrixMode(GL_PROJECTION); 
     glPopMatrix(); // Pop proj matrix
+
+    // Draw text of current state. 
+    // screen in an 18-point Helvetica font
+
 }
 
 void glutscene::display() {
     glClearColor(1.0, 1.0, 1.0, 0.0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt( _eye.x, _eye.y, _eye.z, // eye
                _look_at.x, _look_at.y, _look_at.z,  //look at
                0, 1, 0); // up
-    glRotatef(_current_rotation.x, 1, 0, 0);
-    glRotatef(_current_rotation.y, 0, 1, 0);
         
     // Draws the grid we'll walk around on. 
     int size = 25;  // determining the grid size and the numbers of cells
@@ -248,25 +268,27 @@ void glutscene::menu(int value) {
 
 void glutscene::do_motion(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v) {
     // Check for key input. 
+    static const float move_speed = 3.0f;
     if(key_states['w']) {
-        _eye += -1.0f * n * 2.0f * _delta_time;
-        _look_at += -1.0f * n * 2.0f * _delta_time;
+        _eye += -1.0f * n * move_speed * _delta_time;
+        _look_at += -1.0f * n * move_speed * _delta_time;
     }
     if(key_states['a']) {
-        _eye += -1.0f * u * 2.0f * _delta_time;
-        _look_at += -1.0f * u * 2.0f * _delta_time;
+        _eye += -1.0f * u * move_speed * _delta_time;
+        _look_at += -1.0f * u * move_speed * _delta_time;
     }
     if(key_states['s']) {
-        _eye += n * 2.0f * _delta_time;
-        _look_at += n * 2.0f * _delta_time;
+        _eye += n * move_speed * _delta_time;
+        _look_at += n * move_speed * _delta_time;
     }
     if(key_states['d']) {
-        _eye += u * 2.0f * _delta_time;
-        _look_at += u * 2.0f * _delta_time;
+        _eye += u * move_speed * _delta_time;
+        _look_at += u * move_speed * _delta_time;
     }
 }
 
 void glutscene::idle() {
+    const static float look_speed = 20.0f;
     calc_delta_time();
 
     _fsm.update();
@@ -277,27 +299,32 @@ void glutscene::idle() {
 
     switch(_fsm.get_current_state()) {
         case states::first_person: {
+            _state_string = _first_person_str;
             do_motion(n, u, v);
         } break;
 
         case states::first_person_look: {
             do_motion(n, u, v);
 
+            auto old_look_at = _look_at;
+
             // move it to origin
             _look_at -= _eye;
             // rotate it
             _look_at = glm::rotate(_look_at,
-                                   -1.0f * glm::radians(_mouse_offset.x) * 10.0f,
+                                   -1.0f * glm::radians(_mouse_offset.x) * look_speed,
                                    v);
+
             _look_at = glm::rotate(_look_at,
-                                   glm::radians(_mouse_offset.y) * 10.0f,
+                                   glm::radians(_mouse_offset.y) * look_speed,
                                    u);
             // move it back
             _look_at += _eye;    
 
+
         } break;
         case states::revolve: {
-
+            _state_string = _revolve_str;
         } break;
 
         case states::revolve_dolley: {

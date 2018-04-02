@@ -7,6 +7,7 @@
 #else
 #include <GL/freeglut.h>
 #endif
+
 #include <glm/glm.hpp>
 
 #include "fsm/finite_state_system.hpp"
@@ -45,9 +46,12 @@ private:
 	clock_t _curr_ticks;
 	float _delta_time;
 
-	glm::vec2 _current_rotation;
 	glm::vec3 _look_at;
 	glm::vec3 _eye;
+
+	const char* _state_string;
+	const char* _first_person_str;
+    const char* _revolve_str;
 
 	fsm::finite_state_system<states, triggers> _fsm; // state machine. 
 

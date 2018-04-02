@@ -44,7 +44,7 @@ void idle() {
 // NOTE(clark): This code isn't great. There's finite state machines everywhere, virtual calls, and 
 //              whatever I thought of to try out some new design patterns. I had a blast making it!
 int main(int argc, char *argv[]) {
-    glm::i32vec2 raster_size(1600, 900);
+    glm::i32vec2 raster_size(1336, 768);
     glm::vec2 canvas_size(10.0f, 10.0f);
 
 
