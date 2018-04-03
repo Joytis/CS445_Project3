@@ -7,7 +7,6 @@
 #include <glm/gtx/string_cast.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 
 #include "glutscene.hpp"
-#include "basic_shapes.hpp"
 
 glutscene::glutscene(glm::vec2 c, glm::i32vec2 r) :
 	_raster_size(r), _canvas_size(c),

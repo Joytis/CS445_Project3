@@ -10,7 +10,6 @@
 
 
 #include "glutscene.hpp"
-#include "basic_shapes.hpp"
 
 glutscene* scene;
 
