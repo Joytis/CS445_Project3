@@ -14,9 +14,6 @@ glutscene::glutscene(glm::vec2 c, glm::i32vec2 r) :
     _curr_ticks(clock()), _eye(5.0f, 3.0f, 5.0f), _look_at(0.0f),
     _fsm(states::first_person)
 {
-    _light_pos[0] = 0;
-    _light_pos[1] = 3;
-    _light_pos[2] = 0;
     // Swap modes to revolve
     _fsm.add_transition(states::first_person, states::revolve, triggers::space_bar_down);
     _fsm.add_transition(states::first_person, states::revolve, triggers::c_down);
@@ -146,7 +143,21 @@ void glutscene::draw_gui() {
 
 }
 
+void glutscene::draw_some_cube_squares() {
+    glPushMatrix();
+    glTranslatef(3, -3, 0);
+    draw_some_cube();
+    glTranslatef(-6, 0, 0);
+    draw_some_cube();
+    glTranslatef(0, 6, 0);
+    draw_some_cube();
+    glTranslatef(6, 0, 0);
+    draw_some_cube();
+    glPopMatrix();
+}
+
 void glutscene::draw_some_cube() {
+    const static float _light_pos[] = {5.0, 5.0, 0.0, 1.0};
     glEnable(GL_LIGHTING);
     glShadeModel(GL_SMOOTH); //GL_FLAT
     glMatrixMode(GL_MODELVIEW);
@@ -158,7 +169,6 @@ void glutscene::draw_some_cube() {
 }
 
 void glutscene::display() {
-    glClearColor(1.0, 1.0, 1.0, 0.0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glMatrixMode(GL_MODELVIEW);
@@ -173,6 +183,7 @@ void glutscene::display() {
     // glScalef(30.0f, 30.0f, 30.0f);
     glDisable(GL_LIGHTING);
     glEnable(GL_DEPTH_TEST);
+
     glMatrixMode(GL_MODELVIEW);
     glPushMatrix();
     glBegin(GL_LINES);
@@ -193,10 +204,17 @@ void glutscene::display() {
 
     draw_axes(10.0f);
 
-    // Cube for testing. 
-    draw_some_cube();
-
     draw_gui();
+
+    // Cube for testing. 
+    // Draw some cool cubes
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+    glTranslatef(0, 0, -3);
+    draw_some_cube_squares();
+    glTranslatef(0, 0, 6);
+    draw_some_cube_squares();
+    glPopMatrix();
 
     glutSwapBuffers();
 }
