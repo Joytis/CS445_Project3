@@ -1,6 +1,7 @@
 #include <ctime> // Very simple delta time calculation. 
 #include <iostream>
 
+#include <glm/gtc/type_ptr.hpp> // glm::value_ptr
 #include <glm/gtx/rotate_vector.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 #include <glm/gtx/vector_angle.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 #include <glm/gtx/string_cast.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
@@ -13,6 +14,9 @@ glutscene::glutscene(glm::vec2 c, glm::i32vec2 r) :
     _curr_ticks(clock()), _eye(5.0f, 3.0f, 5.0f), _look_at(0.0f),
     _fsm(states::first_person)
 {
+    _light_pos[0] = 0;
+    _light_pos[1] = 3;
+    _light_pos[2] = 0;
     // Swap modes to revolve
     _fsm.add_transition(states::first_person, states::revolve, triggers::space_bar_down);
     _fsm.add_transition(states::first_person, states::revolve, triggers::c_down);
@@ -52,7 +56,7 @@ void glutscene::reshape(int w, int h) {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     // FOV, aspect ration, near clipping plane, far clipping plane. 
-    gluPerspective(90, _raster_size.x / _raster_size.y, 0.1, 100);
+    gluPerspective(70, _raster_size.x / _raster_size.y, 0.1, 100);
     glViewport(0, 0, w, h);
 }
 
@@ -102,6 +106,8 @@ void glutscene::draw_axes(float scale) {
 
 void glutscene::draw_gui() {
     // Attempt GUI stuff. 
+    glDisable(GL_LIGHTING);
+    glEnable(GL_DEPTH_TEST);
     glMatrixMode(GL_PROJECTION);
     glPushMatrix(); // Push a projection matrix
     glLoadIdentity(); // Load identity to reset display
@@ -140,6 +146,17 @@ void glutscene::draw_gui() {
 
 }
 
+void glutscene::draw_some_cube() {
+    glEnable(GL_LIGHTING);
+    glShadeModel(GL_SMOOTH); //GL_FLAT
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+    // attach light position to light0
+    glLightfv(GL_LIGHT0, GL_POSITION, _light_pos);
+    glutSolidSphere(1, 50, 50);
+    glPopMatrix();  
+}
+
 void glutscene::display() {
     glClearColor(1.0, 1.0, 1.0, 0.0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -153,9 +170,11 @@ void glutscene::display() {
     // Draws the grid we'll walk around on. 
     int size = 25;  // determining the grid size and the numbers of cells
     if(size%2 != 0) ++size;
+    // glScalef(30.0f, 30.0f, 30.0f);
+    glDisable(GL_LIGHTING);
+    glEnable(GL_DEPTH_TEST);
     glMatrixMode(GL_MODELVIEW);
     glPushMatrix();
-    // glScalef(30.0f, 30.0f, 30.0f);
     glBegin(GL_LINES);
     for (int i =0; i<size+1; i++) {
         if(i == size / 2) {
@@ -175,7 +194,7 @@ void glutscene::display() {
     draw_axes(10.0f);
 
     // Cube for testing. 
-    glutSolidCube(1.0);
+    draw_some_cube();
 
     draw_gui();
 
@@ -288,11 +307,7 @@ void glutscene::do_motion(const glm::vec3& n, const glm::vec3& u, const glm::vec
 }
 
 void glutscene::do_motion_mouse(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v) {
-    static const float move_speed = 1.0f;
-    _eye += v * move_speed * _mouse_offset.y;
-    _eye += u * move_speed * _mouse_offset.x;
-    _look_at += v * move_speed * _mouse_offset.y;
-    _look_at += u * move_speed * _mouse_offset.x;
+    
 }
 
 void glutscene::idle() {
@@ -319,13 +334,8 @@ void glutscene::idle() {
             // move it to origin
             _look_at -= _eye;
             // rotate it
-            _look_at = glm::rotate(_look_at,
-                                   -1.0f * glm::radians(_mouse_offset.x) * look_speed,
-                                   v);
-
-            _look_at = glm::rotate(_look_at,
-                                   glm::radians(_mouse_offset.y) * look_speed,
-                                   u);
+            _look_at = glm::rotate(_look_at, -1.0f * glm::radians(_mouse_offset.x) * look_speed, v);
+            _look_at = glm::rotate(_look_at, glm::radians(_mouse_offset.y) * look_speed, u);
             // move it back
             _look_at += _eye;    
 
@@ -336,24 +346,25 @@ void glutscene::idle() {
         } break;
 
         case states::revolve_dolley: {
+            _eye += n * (-2.0f) * _mouse_offset.x;
+            _look_at += n * (-2.0f) * _mouse_offset.x;
         } break;
 
         case states::revolve_revolve: {
             // move it to origin
             _eye -= _look_at;
             // rotate it
-            _eye = glm::rotate(_eye,
-                               -1.0f * glm::radians(_mouse_offset.x) * look_speed,
-                               glm::vec3(0, 1, 0));
-            _eye = glm::rotate(_eye,
-                               glm::radians(_mouse_offset.y) * look_speed,
-                               u);
+            _eye = glm::rotate(_eye, -1.0f * glm::radians(_mouse_offset.x) * look_speed, glm::vec3(0, 1, 0));
+            _eye = glm::rotate(_eye, glm::radians(_mouse_offset.y) * look_speed, u);
             // move it back
             _eye += _look_at;  
         } break;
 
         case states::revolve_pan: {
-            do_motion_mouse(n, u, v);
+            _eye += v * -1.0f * _mouse_offset.y;
+            _eye += u * -1.0f * _mouse_offset.x;
+            _look_at += v * -1.0f * _mouse_offset.y;
+            _look_at += u * -1.0f * _mouse_offset.x;
         } break;
 
     }

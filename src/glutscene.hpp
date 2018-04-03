@@ -42,6 +42,8 @@ private:
 	glm::vec2 _mouse_pos;
 	glm::vec2 _mouse_offset;
 
+	GLfloat _light_pos[3];
+
 	clock_t _prev_ticks;
 	clock_t _curr_ticks;
 	float _delta_time;
@@ -61,7 +63,7 @@ private:
 	static void draw_axes(float scale);
 	void do_motion(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v);
 	void do_motion_mouse(const glm::vec3& n, const glm::vec3& u, const glm::vec3& v);
-
+	void draw_some_cube();
 	
 public:
 	glutscene(glm::vec2 c, glm::i32vec2 r);

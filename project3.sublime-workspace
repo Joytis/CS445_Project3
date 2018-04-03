@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"dolley",
+				"dolley_up"
+			],
+			[
+				"do_mo",
+				"do_motion_mouse"
+			],
+			[
+				"first_er",
+				"first_person_str"
+			],
+			[
+				"first",
+				"first_person_str"
+			],
+			[
+				"current",
+				"current_state_str"
+			],
+			[
+				"look",
+				"look_speed"
+			],
+			[
+				"delta",
+				"delta_eye"
+			],
+			[
+				"del",
+				"delta_look"
+			],
+			[
+				"GLM_",
+				"GLM_SWIZZLE"
+			],
+			[
+				"angle",
+				"angle_x"
+			],
+			[
 				"revol",
 				"revolve_down"
 			],
@@ -20,16 +60,8 @@
 				"_mouse_offset"
 			],
 			[
-				"look",
-				"_look_at"
-			],
-			[
 				"key",
 				"key_states"
-			],
-			[
-				"first",
-				"first_person"
 			],
 			[
 				"get_s",
@@ -42,10 +74,6 @@
 			[
 				"new",
 				"newpos_x"
-			],
-			[
-				"dolley",
-				"dolley_up"
 			],
 			[
 				"pan_",
@@ -186,10 +214,6 @@
 			[
 				"_curren",
 				"_current_drawer"
-			],
-			[
-				"current",
-				"_current_state"
 			],
 			[
 				"_line",
@@ -490,30 +514,6 @@
 			[
 				"truepo",
 				"truePosX"
-			],
-			[
-				"exits",
-				"exitsList"
-			],
-			[
-				"legl",
-				"legalChunks"
-			],
-			[
-				"ExitD",
-				"ExitDirToop"
-			],
-			[
-				"chunkedAd",
-				"chunkedAdjNodes"
-			],
-			[
-				"calculate",
-				"CalculateDistance"
-			],
-			[
-				"otherEx",
-				"otherExit"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "src/main.cpp",
 			"settings":
 			{
-				"buffer_size": 1667,
+				"buffer_size": 2328,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,7 @@
 			"file": "src/glutscene.cpp",
 			"settings":
 			{
-				"buffer_size": 9518,
+				"buffer_size": 11295,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +541,7 @@
 			"file": "src/glutscene.hpp",
 			"settings":
 			{
-				"buffer_size": 1474,
+				"buffer_size": 1619,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -551,6 +551,14 @@
 			"settings":
 			{
 				"buffer_size": 301,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Clark/Downloads/Light.cpp",
+			"settings":
+			{
+				"buffer_size": 4900,
 				"line_ending": "Windows"
 			}
 		},
@@ -636,6 +644,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"text",
 				"Text Pastry: From 0 To X"
@@ -794,10 +806,6 @@
 			],
 			[
 				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -1158,7 +1166,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -1172,6 +1180,70 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"move_speed",
+			"-1.0f * move_speed",
+			"move_speed",
+			"u ",
+			"u",
+			"n",
+			"dolley_down",
+			"dolley_up",
+			"dolley_down",
+			"pan_up",
+			"dolley_down",
+			"_delta_time",
+			"revolve_down",
+			"dolley_down",
+			" \n",
+			"revolve_dolley",
+			"_e_lookye",
+			"_look_at",
+			"_eye",
+			"_look_at",
+			"first_person_str",
+			"_first_person_str",
+			"revolve_str",
+			"[]",
+			"first_person_str",
+			"revolve_str",
+			"_state_string",
+			"state_string",
+			"0.2",
+			"string",
+			"current_state",
+			"string",
+			"glPushMatrix",
+			"200",
+			"0.0f",
+			"10.0f",
+			"2.0f",
+			"move_speed",
+			" =",
+			"_look_at",
+			"old_look_at",
+			"delta_eye",
+			"delta_look",
+			"toString",
+			"length",
+			"eye",
+			"_look_at",
+			" -",
+			".xz",
+			"_look_at",
+			"abs",
+			"old_look_at",
+			"0",
+			"eye",
+			"eyex",
+			"_look_at",
+			"angle",
+			"auto",
+			"angle_x",
+			"900",
+			"1600",
+			"_current_rotation",
+			"draw_axes",
+			"_mouse_offset",
 			"do_motion(",
 			"first_person_look",
 			"first_person",
@@ -1235,57 +1307,7 @@
 			"draw_gui",
 			"first",
 			"_canvas_size",
-			"canvas_size",
-			"vector3",
-			"_color = ",
-			"color_tint",
-			"();",
-			"colors",
-			"glmvoid",
-			"s_color",
-			"GL_PROJECTION",
-			"_current_rotation",
-			"_curr_time",
-			"= ",
-			"_prev_time",
-			"_curr_ticks",
-			"_curr_time",
-			"_prev_time",
-			"calc_delta_time",
-			"second",
-			"raster_size",
-			"first",
-			"800",
-			"g_winWidth",
-			"canvas",
-			"auto",
-			"_current_color",
-			"color",
-			"_current_color",
-			".second",
-			".first",
-			"second",
-			"first",
-			"std::pair<float, float>",
-			"g_winWidth",
-			"GL_DEPTH_BUFFER_BIT",
-			"cameraTarget",
-			"Model",
-			"View",
-			"Projection",
-			"g_winWidth",
-			"Rotate",
-			"rotate",
-			"Rotate",
-			"rotate",
-			"Rotate",
-			"translate",
-			"Translate",
-			"translate",
-			"Translate",
-			"project2",
-			" ${",
-			"project2"
+			"canvas_size"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1303,7 +1325,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1312,15 +1334,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1667,
+						"buffer_size": 2328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1387,
-								1387
+								1726,
+								1726
+							],
+							[
+								1778,
+								1778
+							],
+							[
+								1831,
+								1831
+							],
+							[
+								1883,
+								1883
 							]
 						],
 						"settings":
@@ -1331,10 +1365,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 576.0,
+						"translation.y": 656.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1343,15 +1377,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9518,
+						"buffer_size": 11295,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8572,
-								8572
+								4114,
+								4114
 							]
 						],
 						"settings":
@@ -1362,10 +1396,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 385.0,
+						"translation.y": 1394.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1374,15 +1408,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1474,
+						"buffer_size": 1619,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1319,
-								1319
+								1464,
+								1464
 							]
 						],
 						"settings":
@@ -1392,16 +1426,16 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 497.0,
+						"translation.y": 513.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1410,15 +1444,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9518,
+						"buffer_size": 11295,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1002,
-								1002
+								9256,
+								9256
 							]
 						],
 						"settings":
@@ -1429,7 +1463,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4190.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1461,7 +1495,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1470,15 +1504,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1474,
+						"buffer_size": 1619,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								445,
-								445
+								738,
+								738
 							]
 						],
 						"settings":
@@ -1488,14 +1522,52 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 321.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Clark/Downloads/Light.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								504,
+								486
+							],
+							[
+								548,
+								530
+							],
+							[
+								592,
+								574
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 190.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "src/fsm/enum_class_bitmasks.hpp",
 					"semi_transient": false,
 					"settings":
@@ -1519,7 +1591,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1528,15 +1600,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1667,
+						"buffer_size": 2328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1447,
-								1447
+								2328,
+								2328
 							]
 						],
 						"settings":
@@ -1547,14 +1619,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 657.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "src/basic_shapes.hpp",
 					"semi_transient": false,
 					"settings":
@@ -1578,11 +1650,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "src/basic_shapes.cpp",
 					"semi_transient": false,
 					"settings":
@@ -1607,11 +1679,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "src/fsm/finite_state_system.hpp",
 					"semi_transient": false,
 					"settings":
@@ -1636,7 +1708,7 @@
 						"translation.y": 48.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1710,12 +1782,12 @@
 		"selected_items":
 		[
 			[
-				"glut",
-				"src\\glutscene.hpp"
-			],
-			[
 				"main",
 				"src\\main.cpp"
+			],
+			[
+				"glut",
+				"src\\glutscene.cpp"
 			],
 			[
 				"glutsc",
@@ -2246,7 +2318,7 @@
 		],
 		"width": 392.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
