@@ -1,45 +1,36 @@
-_________               .__    ________                       
-\_   ___ \  ____   ____ |  |   \______ \____________ __  _  __
-/    \  \/ /  _ \ /  _ \|  |    |    |  \_  __ \__  \\ \/ \/ /
-\     \___(  <_> |  <_> )  |__  |    `   \  | \// __ \\     / 
- \______  /\____/ \____/|____/ /_______  /__|  (____  /\/\_/  
-        \/                             \/           \/        
+________                                 _________                                     
+\______ \   ____ ______   ____           \_   ___ \_____    _____   ________________   
+ |    |  \ /  _ \\____ \_/ __ \   ______ /    \  \/\__  \  /     \_/ __ \_  __ \__  \  
+ |    `   (  <_> )  |_> >  ___/  /_____/ \     \____/ __ \|  Y Y  \  ___/|  | \// __ \_
+/_______  /\____/|   __/ \___  >          \______  (____  /__|_|  /\___  >__|  (____  /
+        \/       |__|        \/                  \/     \/      \/     \/           \/ 
+
+
 By Clark Chambers
 
-1. Upon starting the program you will be presented with a clean slate. You are tasted with filling it with ART.
+1. Woah dude. Upon opening this application. You are floating. Through space. On a grid. Whaaat. 
+2. But just you wait. Because you can CONTROL yourself. You have the power to MOVE. 
+3. But how? How can I move in this cruel plane? WELL I'M HERE TO TELL YOU. 
 
-2. Draw stuff. This is the most complicated step, as drawing is hard and takes years of training. 
-	Unfortunately, this app is awful for trainig, because it sucks. Drawing with this application
-	can only be done by a true master. 
+4.  YOu will start in first person mode: HERE ARE YOUR CONTROLS:
+          __      __             NOTE(clark): YOu can also click and drag to move the camera around :)
+         /  \    /  \           
+  ______ \   \/\/   /  ______   
+ /_____/  \        /  /_____/   
+           \__/\  /             
+                \/              
+   _____    _________________   
+  /  _  \  /   _____/\______ \  
+ /  /_\  \ \_____  \  |    |  \ 
+/    |    \/        \ |    `   \
+\____|__  /_______  //_______  /
+        \/        \/         \/ 
+5. These keys will move you around how you would expect them to. Forward. Backwards. Left and Right. 
 
-	Left clicking will put points on the screen, indicated by your rad little pointer. 
-	Right clicking will give you a dope menu with a bunch of dropdowns. 
-	Space will finalize any kind of crazy polygon or line strip you make. 
+6. You may be asking at this point: "WHY THE HECK IS THIS SO BORING? I'VE PLAYED FIRST PERSON SHOOTERS BEFORE"
+7. BAM WHAM. Then I hit you with MULTIPLE CONTROL SCHEMES!!
+8. Press 'C' or 'SPACE' to swap to MAYA MODE! Where you can click around the screen with middle, right, and 
+	left clicks to pretend like you're modeling something. 
+9. Just so you know. You can't model things. That would be WAY too cool for this program. 
 
-	You've got a few options when drawing things. You can just put triangles on the screen,
-	or you could go nuts with some other cool shape options such as :
-		Points (bland)
-		Lines (mild)
-		Quads (spicy)
-		Polygons (particularly spicy)
-	You can choose which one you want in the Shapes dropdown with a right click. 
-
-	Furthermore, you can turn these shapes and drawings all SORTS of wild colors such as:
-		Literially just the rainbow. 
-		 (red) (orange) (yellow) (green) (blue) (purple)
-	And on top of that, every point you place can have its own COLOR. Allowing you to make some 
-		DOPE GRADIANTS!
-	If you're like me, and hate going through the drop menu to change your dang color, you can use 
-	the following keys:
-		1: red 
-		2: orange 
-		3: yellow 
-		4: green 
-		5: blue 
-		6: purple
-
-	On a lesser note, you can vary the size of lines and points with those other options on the dropdown
-		or whatever. Your call, dude. 
-
-3. Publush your work to the world. You've done it. You're a champion. I'm proud of you.
-
+NOTE(clark): I copied that cool little axis camera at the bottom left. I liked it. 

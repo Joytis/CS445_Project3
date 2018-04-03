@@ -36,7 +36,7 @@ glutscene::glutscene(glm::vec2 c, glm::i32vec2 r) :
     memset(key_states, 0, sizeof(key_states));
 
     _first_person_str = "First Person Camera";
-    _revolve_str = "Revolve Camera";
+    _revolve_str = "MAYA CAMERA!!!";
     _state_string = _first_person_str;
 }
 
